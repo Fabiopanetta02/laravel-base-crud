@@ -1,11 +1,9 @@
 @extends('layouts.main')
 
-@section('title', 'Comics')
+@section('title', $comic->title)
     
 @section('content')
-<a href="{{ route('comics.create') }}" class="btn btn-secondary">Crea Fumetto</a>
 <div class="d-flex flex-wrap">
-    @forelse ($comics as $comic)
     <div class="card mx-3 my-5" style="width: 18rem;">
         <div class="card-body">
             @if($comic->thumb) 
@@ -19,8 +17,6 @@
             <p class="card-text">{{ $comic->type}}</p>
         </div>
     </div>
-    @empty
-    @endforelse
 </div>
 
 @endsection
