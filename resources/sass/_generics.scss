@@ -1,0 +1,112 @@
+@import "variables";
+//Header
+header{
+    a{
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        font-weight: bold;
+    }
+    
+    .sigla {
+        font-size: 0.5rem;
+        vertical-align: super;
+        font-weight: normal;
+    }
+    
+    i.far.fa-registered {
+        vertical-align: super;
+    }
+}
+
+
+//Site Main
+.jumbo {
+    background-image: url("../images/jumbotron.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+}
+
+//Footer
+/* Footer */
+#site_footer {
+    background-image: url("../images/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    /* informations */
+    .informations {
+        display: flex;
+        justify-content: space-between;
+        .row {
+            padding: 2rem 0;
+            width: 40%;
+            .col-4 {
+                width: calc(100% / 3);
+            }
+            h3 {
+                color: #fff;
+                padding-bottom: 0.5rem;
+            }
+            .list_shop {
+                padding-top: 1rem;
+            }
+            ul {
+                padding-left: 0;
+                list-style: none;
+                & a {
+                    color: #959595;;
+                    font-size: 0.7rem;
+                    text-decoration: none;
+                }
+            }
+        }
+        .rights {
+            padding-top: 1rem;
+            small {
+                color: #959595;;
+                font-size: 0.7rem;
+                & a {
+                    text-decoration: none;
+                    color: $color_primary;
+                }
+            }
+        }
+        .footer_logo {
+            background-image: url("../images/dc-logo-bg.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 550px;
+        }
+    }
+    /* socials */
+    .socials {
+        background-color: #303030;
+        padding: 2rem 0;
+        & .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .btn {
+                border: 1px solid $color_primary;
+                padding: 1rem;
+                & a {
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+            .left_icons {
+                display: flex;
+                align-items: center;
+                & h4 {
+                    color: $color_primary;
+                    margin-right: 1rem;
+                }
+                & img {
+                    padding: 0 0.5rem;
+                }
+            }
+        }
+    }
+}
